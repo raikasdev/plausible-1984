@@ -7,7 +7,7 @@
 - Prefers reduced motion, contrast... (accessibility)
 - Screen size
 - Browser locale
-- Network type
+- Network type (simple estimate of network speed "4g", "3g", "2g" or "simple-2g", [read more](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation/effectiveType))
 - Page scroll depth and scroll to end
 
 ## Usage
@@ -20,7 +20,7 @@ You can use the addons you want, but at least `manual` is required.
 <script src="../path/to/plausible-1984.js" async defer></script>
 ```
 
-The scroll depth uses a manual `navigator.sendBeacon` call in order to send data reliably on page close, so if you aren't using Saas Plausible or the same domain, you need to also provide `data-api=https://plausible.yourdomain.tld` and/or `data-domain="yourdomain.tld"`.
+The scroll depth uses a manual `navigator.sendBeacon` call in order to send data reliably on page close, so if you aren't using SaaS Plausible or the same domain, you need to also provide `data-api=https://plausible.yourdomain.tld` and/or `data-domain="yourdomain.tld"`.
 
 ## Size
 
